@@ -1,0 +1,5 @@
+#!/bin/bash
+
+DIR=$(cd "$(dirname "$0")"; pwd)
+mogenerator --model "$DIR/YTPlayerAppDemo.xcdatamodeld/YTPlayerAppDemo.xcdatamodel" --machine-dir \
+ "$DIR/CoreData/Machine" --human-dir "$DIR/CoreData/Human" --swift
